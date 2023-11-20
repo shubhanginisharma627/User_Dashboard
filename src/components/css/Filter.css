@@ -1,0 +1,14 @@
+.filter{
+    width: 200px;
+} 
+.filter {
+    margin-bottom: 20px;
+  }
+  
+  .filter h4 {
+    margin-bottom: 10px;
+  }
+  
+  .filter div {
+    margin-bottom: 5px;
+  }
