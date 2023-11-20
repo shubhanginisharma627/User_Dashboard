@@ -32,7 +32,7 @@ export const fetchUsers = () => {
   return async dispatch => {
     dispatch(fetchUsersRequest());
     try {
-      const response = await axios.get("https://backend-vjbb.onrender.com");
+      const response = await axios.get("https://backendassignment-o6hd.onrender.com");
       //console.log("response",response.data)
       return dispatch(fetchUsersSuccess(response.data));
     } catch (error) {
