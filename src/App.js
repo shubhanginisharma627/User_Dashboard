@@ -37,10 +37,10 @@ function App() {
     const availabilityMatch = availabilityFilter.length === 0 || availabilityFilter.includes(user.available.toString());
     return domainMatch && genderMatch && availabilityMatch;
   };
-  var filteredUsers = users.filter(user =>
+  var filteredUsers = users?.filter(user =>
     `${user.first_name}${user.last_name}`.toLowerCase().includes(searchTerm) || `${user.first_name} ${user.last_name}`.toLowerCase().includes(searchTerm)
   );
-   filteredUsers = filteredUsers.filter(user => applyFilters(user));
+   filteredUsers = filteredUsers?.filter(user => applyFilters(user));
   const indexOfLastUser = currentPage * usersPerPage;
   const indexOfFirstUser = indexOfLastUser - usersPerPage;
   const currentUsers = filteredUsers.slice(indexOfFirstUser, indexOfLastUser);
